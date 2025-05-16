@@ -3,23 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>John Doe - Freelance Web Developer</title>
-  <meta name="description" content="Hire John Doe, an SEO-focused freelance web developer helping businesses create fast, responsive websites." />
+  <title>Matharu's - Concrete Products</title>
+  <meta name="description" content="Matharu's Pvt Ltd., based in Jabalpur (M.P.), India – A Trusted Manufacturer of Premium-Quality Concrete Benches, Jalis, and More." />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://yourusername.github.io/" />
-
-  <!-- Social Preview -->
-  <meta property="og:title" content="John Doe - Freelance Web Developer" />
-  <meta property="og:description" content="Need a website that ranks on Google? I build fast, SEO-optimized websites." />
-  <meta property="og:url" content="https://yourusername.github.io/" />
-  <meta property="og:type" content="website" />
-  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://kalsi-ips.github.io/matharu-website/" />  
 
   <!-- Favicon (optional) -->
   <link rel="icon" href="favicon.ico" />
 </head>
 <body>
-  <h1>John Doe - Web Developer</h1>
-  <p>I help businesses grow online with clean, fast, and SEO-optimized websites.</p>
+  <header>
+    <nav>
+      <ul>
+        <li><a class="nav-link" onclick="scrollToSection('home')">Home</a></li>
+        <li><a class="nav-link" onclick="scrollToSection('products')">Products</a></li>
+        <li><a class="nav-link" onclick="scrollToSection('contact')">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Concrete Products</h1>
+    <p>Quality Concrete Benches, Jali, and More</p>
+  </header>
+  <main>
+    <section id="home" class="hero">
+      <img src="images/hero-placeholder.jpg" alt="Concrete Products" style="width:100%;max-width:600px;">
+      <h2>Welcome to Our Concrete Products Store</h2>
+      <p>We offer a wide range of durable and stylish concrete products for your home, garden, and business.</p>
+    </section>
+
+    <section id="products" class="products">
+      <h2>Our Products</h2>
+      <div class="product">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2025/1/484264319/PC/HT/KE/6824495/precast-concrete-backrest-bench.jpg" alt="Concrete Bench">
+        <h2>Concrete Bench</h2>
+        <p>Durable and stylish benches for parks, gardens, and public spaces.</p>
+        <div class="pricing">
+          <h3>Pricing</h3>
+          <ul>
+            <li>Standard Bench (4ft): ₹24,999</li>
+            <li>Deluxe Bench (6ft): ₹32,999</li>
+            <li>Custom Design: Contact for quote</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://www.trade4asia.com/ProductImg/jali.jpeg" alt="Concrete Jali">
+        <h2>Concrete Jali</h2>
+        <p>Decorative jali for architectural and landscaping applications.</p>
+        <div class="pricing">
+          <h3>Pricing</h3>
+          <ul>
+            <li>Standard Panel (2x4ft): ₹16,499</li>
+            <li>Large Panel (4x6ft): ₹28,999</li>
+            <li>Custom Design: Contact for quote</li>
+          </ul>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2022/9/VG/NQ/AE/111989375/concrete-pots--1000x1000.jpg" alt="Concrete Pot">
+        <h2>Concrete Pot</h2>
+        <p>Elegant concrete pots for plants and outdoor decor.</p>
+        <div class="pricing">
+          <h3>Pricing</h3>
+          <ul>
+            <li>Small Pot (12"): ₹3,999</li>
+            <li>Medium Pot (18"): ₹6,499</li>
+            <li>Large Pot (24"): ₹10,499</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><strong>Phone:</strong> +91-12345-67890</p>
+        <p><strong>Email:</strong> info@concreteproducts.com</p>
+        <p><strong>Address:</strong> 123 Concrete Lane, Your City, India</p>
+      </div>
+      <div class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Concrete Products. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </body>
 </html>
